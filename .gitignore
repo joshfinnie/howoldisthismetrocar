@@ -12,3 +12,8 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+
+# Testing Stuff
+npm-debug.log
+/node_modules/
+/bower_components/
