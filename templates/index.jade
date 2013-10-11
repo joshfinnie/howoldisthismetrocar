@@ -16,9 +16,9 @@ body.ng-cloak
   .container(ng-controller='hoitmcController')
     .front-modal(ng-show='showSearch')
       h1.front-modal-heading
-        | How old is this
+        | How old is this&nbsp;
         img(src='assets/images/WMATA_Metro_Logo.png', alt='Metro', title='Metro')
-        | car?
+        | &nbsp;car?
       form(role='form', ng-submit='SearchCars()')
         .form-group
           label.sr-only(for='car-number') Car Number
@@ -27,12 +27,12 @@ body.ng-cloak
           input.btn.btn-primary.btn-block(type='submit', value='Search')
     .front-modal(ng-show='showResults')
       h1
-        | This
+        | This&nbsp;
         img(src='assets/images/WMATA_Metro_Logo.png', alt='Metro', title='Metro')
-        | car is at least
+        | &nbsp;car is at least
         br
         span.year {{ yearsOld }}
-        | years old!
+        | &nbsp;years old!
       table.table.table-hover.table-condensed
         tr
           td Car Number:
@@ -52,11 +52,11 @@ body.ng-cloak
       p
         | © {{ year }} - HowOldIsThisMetroCar.com
       p
-        | Created by
+        | Created by&nbsp;
         a(href='http://www.joshfinnie.com') Josh Finnie
-        | using
+        | &nbsp;using&nbsp;
         a(href='http://angularjs.org/') Angular.js
-        | . Data gathered from
+        | . Data gathered from&nbsp;
         a(href='http://en.wikipedia.org/wiki/Washington_Metro_rolling_stock') Wikipedia
         | .
       p

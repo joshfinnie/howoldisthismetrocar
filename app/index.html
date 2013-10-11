@@ -14,7 +14,7 @@
 <body class="ng-cloak">
   <div ng-controller="hoitmcController" class="container">
     <div ng-show="showSearch" class="front-modal">
-      <h1 class="front-modal-heading">How old is this<img src="assets/images/WMATA_Metro_Logo.png" alt="Metro" title="Metro">car?</h1>
+      <h1 class="front-modal-heading">How old is this&nbsp;<img src="assets/images/WMATA_Metro_Logo.png" alt="Metro" title="Metro">&nbsp;car?</h1>
       <form role="form" ng-submit="SearchCars()">
         <div class="form-group">
           <label for="car-number" class="sr-only">Car Number</label>
@@ -26,7 +26,7 @@
       </form>
     </div>
     <div ng-show="showResults" class="front-modal">
-      <h1>This<img src="assets/images/WMATA_Metro_Logo.png" alt="Metro" title="Metro">car is at least<br><span class="year">{{ yearsOld }}</span>years old!</h1>
+      <h1>This&nbsp;<img src="assets/images/WMATA_Metro_Logo.png" alt="Metro" title="Metro">&nbsp;car is at least<br><span class="year">{{ yearsOld }}</span>&nbsp;years old!</h1>
       <table class="table table-hover table-condensed">
         <tr>
           <td>Car Number:</td>
@@ -48,7 +48,7 @@
     </div>
     <div class="footer">
       <p>© {{ year }} - HowOldIsThisMetroCar.com</p>
-      <p>Created by<a href="http://www.joshfinnie.com">Josh Finnie</a>using<a href="http://angularjs.org/">Angular.js</a>. Data gathered from<a href="http://en.wikipedia.org/wiki/Washington_Metro_rolling_stock">Wikipedia</a>.</p>
+      <p>Created by&nbsp;<a href="http://www.joshfinnie.com">Josh Finnie</a>&nbsp;using&nbsp;<a href="http://angularjs.org/">Angular.js</a>. Data gathered from&nbsp;<a href="http://en.wikipedia.org/wiki/Washington_Metro_rolling_stock">Wikipedia</a>.</p>
       <p><a href="https://twitter.com/joshfinnie" data-show-count="false" class="twitter-follow-button">Follow @joshfinnie</a></p>
     </div>
   </div>
