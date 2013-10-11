@@ -16,40 +16,45 @@ app.controller('hoitmcController', function($scope) {
         // 1000 series
         if($scope.carNumber > 999 && $scope.carNumber < 2000) {
             $scope.yearsOld = NOW - 1976;
-            $scope.carBuilder = "Rohr Industries, Winder, Georgia, USA";
-            $scope.datesBuilt = "1973–1976";
+            $scope.carBuilder = "Rohr Industries";
+            $scope.datesBuilt = "1973-1976";
         }
         // 2000 series
         if($scope.carNumber > 1999 && $scope.carNumber < 3000) {
             $scope.yearsOld = NOW - 1983;
-            $scope.carBuilder = "Breda Costruzioni Ferroviarie, Pistoia, Italy";
-            $scope.datesBuilt = "1981–1983";
+            $scope.carBuilder = "Breda Costruzioni Ferroviarie";
+            $scope.datesBuilt = "1981-1983";
         }
         // 3000 series
         if($scope.carNumber > 2999 && $scope.carNumber < 4000) {
             $scope.yearsOld = NOW - 1988;
-            $scope.carBuilder = "Breda Costruzioni Ferroviarie, Pistoia, Italy";
-            $scope.datesBuilt = "1984–1988";
+            $scope.carBuilder = "Breda Costruzioni Ferroviarie";
+            $scope.datesBuilt = "1984-1988";
         }
         // 4000 series
         if($scope.carNumber > 3999 && $scope.carNumber < 5000) {
             $scope.yearsOld = NOW - 1993;
-            $scope.carBuilder = "Breda Costruzioni Ferroviarie, Pistoia, Italy";
-            $scope.datesBuilt = "1991–1993";
+            $scope.carBuilder = "Breda Costruzioni Ferroviarie";
+            $scope.datesBuilt = "1991-1993";
         }
         // 5000 series
         if($scope.carNumber > 4999 && $scope.carNumber < 6000) {
             $scope.yearsOld = NOW - 2004;
-            $scope.carBuilder = "CAF/AAI, Zaragoza and Bessain, Spain and Hunt Valley, Maryland, USA";
-            $scope.datesBuilt = "2001–2004";
+            $scope.carBuilder = "CAF/AAI";
+            $scope.datesBuilt = "2001-2004";
         }
         // 6000 series
         if($scope.carNumber > 5999 && $scope.carNumber < 7000) {
             $scope.yearsOld = NOW - 2008;
-            $scope.carBuilder = "Alstom Transportation, Barcelona, Spain and Hornell, New York, USA";
-            $scope.datesBuilt = "2005–2008";
+            $scope.carBuilder = "Alstom Transportation";
+            $scope.datesBuilt = "2005-2008";
         }
-        if($scope.carNumber > 6999){
+        if($scope.carNumber > 6999 && $scope.carNumber < 8000) {
+            $scope.yearsOld = NOW - 2012;
+            $scope.carBuilder = "Kawasaki Rail Car";
+            $scope.datesBuilt = "2012-2017";
+        }
+        if($scope.carNumber > 7999) {
             $scope.yearsOld = "Undefined";
             $scope.carBuilder = "";
             $scope.datesBuilt = "";
