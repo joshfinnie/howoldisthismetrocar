@@ -14,8 +14,8 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.0.8",
-    "bootstrap": "~3.0.0",
-    "html5shiv": "~3.7.0"
+    "angular": "1.2.21",
+    "bootstrap": "3.2.0",
+    "html5shiv": "3.7.2"
   }
 }

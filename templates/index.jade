@@ -1,4 +1,4 @@
-!!! 5
+doctype html
 html(lang='en', ng-app='hoitmc')
 head
   meta(charset='utf-8')
@@ -7,11 +7,9 @@ head
   meta(name='description', content='A Website that allows you to check the age of a WMATA metro car.')
   meta(name='author', content='Josh Finnie <josh.finnie@gmail.com>')
 
-  link(href='assets/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+  link(href='assets/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
   link(href='assets/css/style.min.css', rel='stylesheet')
 
-  script(src='assets/angular/angular.min.js')
-  script(src='assets/js/hoitmc.js')
 body.ng-cloak
   .container(ng-controller='hoitmcController')
     .front-modal(ng-show='showSearch')
@@ -61,8 +59,10 @@ body.ng-cloak
         | .
       p
         a.twitter-follow-button(href='https://twitter.com/joshfinnie', data-show-count='false') Follow @joshfinnie
-  script(src='assets/jquery/jquery.min.js')
-  script(src='assets/bootstrap/js/bootstrap.min.js')
+  script(src='assets/jquery/dist/jquery.min.js')
+  script(src='assets/bootstrap/dist/js/bootstrap.min.js')
+  script(src='assets/angular/angular.js')
+  script(src='assets/js/hoitmc.js')
   script.
     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
   script.
