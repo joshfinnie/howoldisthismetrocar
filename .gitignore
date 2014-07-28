@@ -5,6 +5,9 @@
 .LSOverride
 Icon
 
+app/
+lib/
+.sass_cache/
 
 # Thumbnails
 ._*
@@ -16,4 +19,3 @@ Icon
 # Testing Stuff
 npm-debug.log
 /node_modules/
-/bower_components/
