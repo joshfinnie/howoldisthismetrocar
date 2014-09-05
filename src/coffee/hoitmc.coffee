@@ -5,6 +5,8 @@ app.controller "hoitmcController", ($scope) ->
   $scope.showResults = false
   $scope.year = NOW
   $scope.SearchCars = ->
+    
+    # No three digit series numbers
     if $scope.carNumber < 1000
       $scope.yearsOld = "Undefined"
       $scope.carBuilder = ""
@@ -45,14 +47,19 @@ app.controller "hoitmcController", ($scope) ->
       $scope.yearsOld = NOW - 2008
       $scope.carBuilder = "Alstom Transportation"
       $scope.datesBuilt = "2005-2008"
+    
+    # 7000 series
     if $scope.carNumber > 6999 and $scope.carNumber < 8000
       $scope.yearsOld = NOW - 2012
       $scope.carBuilder = "Kawasaki Rail Car"
       $scope.datesBuilt = "2012-2017"
+      
+    # Non-existent models
     if $scope.carNumber > 7999
       $scope.yearsOld = "Undefined"
       $scope.carBuilder = ""
       $scope.datesBuilt = ""
+      
     $scope.noteToTweet = "This Metro Car (No. " + $scope.carNumber + ") is at least " + $scope.yearsOld.toString() + " years old! How old is yours? www.HowOldIsThisMetroCar.com"
     $scope.showSearch = false
     $scope.showResults = true
