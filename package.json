@@ -32,7 +32,7 @@
     "grunt-contrib-jade": "^0.12.0",
     "grunt-contrib-jasmine": "^0.7.0",
     "grunt-contrib-jshint": "^0.10.0",
-    "grunt-contrib-sass": "^0.7.3",
+    "grunt-contrib-sass": "^2.0.0",
     "grunt-istanbul": "^0.3.0",
     "grunt-karma": "^0.8.3",
     "istanbul": "^0.3.0",
